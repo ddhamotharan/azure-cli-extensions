@@ -1,0 +1,1918 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-azure-mgmt-resource/21.1.0b1 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_cosmosdb_mongodb_collection000001?api-version=2021-04-01
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001","name":"cli_test_cosmosdb_mongodb_collection000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2022-08-02T06:32:37Z"},"properties":{"provisioningState":"Succeeded"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '362'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 02 Aug 2022 06:32:42 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-msedge-ref:
+      - 'Ref A: 20885F31A8914F5193D1186492620168 Ref B: WSTEDGE1018 Ref C: 2022-08-02T06:32:42Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"location": "westus", "kind": "MongoDB", "properties": {"locations": [{"locationName":
+      "CentralUS", "failoverPriority": 0, "isZoneRedundant": false}], "databaseAccountOfferType":
+      "Standard", "apiProperties": {"serverVersion": "3.6"}, "createMode": "Default",
+      "backupPolicy": {"type": "Continuous", "continuousModeProperties": {"tier":
+      "Continuous30Days"}}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '358'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: PUT
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003","name":"cli000003","location":"West
+        US","type":"Microsoft.DocumentDB/databaseAccounts","kind":"MongoDB","tags":{},"systemData":{"createdAt":"2022-08-02T06:32:43.7461128Z"},"properties":{"provisioningState":"Creating","publicNetworkAccess":"Enabled","enableAutomaticFailover":false,"enableMultipleWriteLocations":false,"enablePartitionKeyMonitor":false,"isVirtualNetworkFilterEnabled":false,"virtualNetworkRules":[],"EnabledApiTypes":"MongoDB","disableKeyBasedMetadataWriteAccess":false,"enableFreeTier":false,"enableAnalyticalStorage":false,"analyticalStorageConfiguration":{"schemaType":"FullFidelity"},"instanceId":"9872bc75-d0ea-4ac0-9c97-d4048f081534","createMode":"Default","databaseAccountOfferType":"Standard","enableFullFidelityChangeFeed":false,"defaultIdentity":"","networkAclBypass":"None","disableLocalAuth":false,"consistencyPolicy":{"defaultConsistencyLevel":"Session","maxIntervalInSeconds":5,"maxStalenessPrefix":100},"apiProperties":{"serverVersion":"3.6"},"configurationOverrides":{},"writeLocations":[{"id":"cli000003-centralus","locationName":"Central
+        US","provisioningState":"Creating","failoverPriority":0,"isZoneRedundant":false}],"readLocations":[{"id":"cli000003-centralus","locationName":"Central
+        US","provisioningState":"Creating","failoverPriority":0,"isZoneRedundant":false}],"locations":[{"id":"cli000003-centralus","locationName":"Central
+        US","provisioningState":"Creating","failoverPriority":0,"isZoneRedundant":false}],"failoverPolicies":[{"id":"cli000003-centralus","locationName":"Central
+        US","failoverPriority":0}],"cors":[],"capabilities":[{"name":"EnableMongo"}],"ipRules":[],"backupPolicy":{"type":"Continuous","continuousModeProperties":{"tier":"Continuous30Days"}},"networkAclBypassResourceIds":[],"diagnosticLogSettings":{"enableFullTextQuery":"None"},"keysMetadata":{"primaryMasterKey":{"generationTime":"2022-08-02T06:32:43.7461128Z"},"secondaryMasterKey":{"generationTime":"2022-08-02T06:32:43.7461128Z"},"primaryReadonlyMasterKey":{"generationTime":"2022-08-02T06:32:43.7461128Z"},"secondaryReadonlyMasterKey":{"generationTime":"2022-08-02T06:32:43.7461128Z"}}},"identity":{"type":"None"}}'
+    headers:
+      azure-asyncoperation:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '2311'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:32:44 GMT
+      location:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/operationResults/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1196'
+      x-msedge-ref:
+      - 'Ref A: 729DE47D9ABD424CBE40F6575FEFD6AD Ref B: STBEDGE0109 Ref C: 2022-08-02T06:32:42Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:33:14 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 12A6C6DA816D4A40B01C16B8A9080508 Ref B: STBEDGE0109 Ref C: 2022-08-02T06:33:14Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:33:44 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 176435516E3845138A7B85BFCBA33E3E Ref B: STBEDGE0109 Ref C: 2022-08-02T06:33:44Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:34:14 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 842EBA5D171F4877BE22ADD8AABC64D2 Ref B: STBEDGE0109 Ref C: 2022-08-02T06:34:15Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:34:44 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 3F8E3555912B4BFEBE33558301CBD1E9 Ref B: STBEDGE0109 Ref C: 2022-08-02T06:34:45Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/386e4673-5414-4a0d-902b-c44a8aaf2612?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Succeeded"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '22'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:14 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: B5C493EAE5B04898832987BF79393850 Ref B: STBEDGE0109 Ref C: 2022-08-02T06:35:15Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003","name":"cli000003","location":"West
+        US","type":"Microsoft.DocumentDB/databaseAccounts","kind":"MongoDB","tags":{},"systemData":{"createdAt":"2022-08-02T06:34:44.9121025Z"},"properties":{"provisioningState":"Succeeded","documentEndpoint":"https://cli000003.documents-test.windows-int.net:443/","mongoEndpoint":"https://cli000003.mongo.cosmos.windows-int.net:443/","publicNetworkAccess":"Enabled","enableAutomaticFailover":false,"enableMultipleWriteLocations":false,"enablePartitionKeyMonitor":false,"isVirtualNetworkFilterEnabled":false,"virtualNetworkRules":[],"EnabledApiTypes":"MongoDB","disableKeyBasedMetadataWriteAccess":false,"enableFreeTier":false,"enableAnalyticalStorage":false,"analyticalStorageConfiguration":{"schemaType":"FullFidelity"},"instanceId":"9872bc75-d0ea-4ac0-9c97-d4048f081534","createMode":"Default","databaseAccountOfferType":"Standard","enableFullFidelityChangeFeed":false,"defaultIdentity":"FirstPartyIdentity","networkAclBypass":"None","disableLocalAuth":false,"consistencyPolicy":{"defaultConsistencyLevel":"Session","maxIntervalInSeconds":5,"maxStalenessPrefix":100},"apiProperties":{"serverVersion":"3.6"},"configurationOverrides":{"EnableBsonSchema":"True"},"writeLocations":[{"id":"cli000003-centralus","locationName":"Central
+        US","documentEndpoint":"https://cli000003-centralus.documents-test.windows-int.net:443/","provisioningState":"Succeeded","failoverPriority":0,"isZoneRedundant":false}],"readLocations":[{"id":"cli000003-centralus","locationName":"Central
+        US","documentEndpoint":"https://cli000003-centralus.documents-test.windows-int.net:443/","provisioningState":"Succeeded","failoverPriority":0,"isZoneRedundant":false}],"locations":[{"id":"cli000003-centralus","locationName":"Central
+        US","documentEndpoint":"https://cli000003-centralus.documents-test.windows-int.net:443/","provisioningState":"Succeeded","failoverPriority":0,"isZoneRedundant":false}],"failoverPolicies":[{"id":"cli000003-centralus","locationName":"Central
+        US","failoverPriority":0}],"cors":[],"capabilities":[{"name":"EnableMongo"}],"ipRules":[],"backupPolicy":{"type":"Continuous","continuousModeProperties":{"tier":"Continuous30Days"}},"networkAclBypassResourceIds":[],"diagnosticLogSettings":{"enableFullTextQuery":"None"},"keysMetadata":{"primaryMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"},"secondaryMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"},"primaryReadonlyMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"},"secondaryReadonlyMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"}}},"identity":{"type":"None"}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '2758'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:15 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 0581723CE6D143CEBD668B7827DFA17F Ref B: STBEDGE0109 Ref C: 2022-08-02T06:35:15Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -n -g --kind --server-version --backup-policy-type --locations
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003","name":"cli000003","location":"West
+        US","type":"Microsoft.DocumentDB/databaseAccounts","kind":"MongoDB","tags":{},"systemData":{"createdAt":"2022-08-02T06:34:44.9121025Z"},"properties":{"provisioningState":"Succeeded","documentEndpoint":"https://cli000003.documents-test.windows-int.net:443/","mongoEndpoint":"https://cli000003.mongo.cosmos.windows-int.net:443/","publicNetworkAccess":"Enabled","enableAutomaticFailover":false,"enableMultipleWriteLocations":false,"enablePartitionKeyMonitor":false,"isVirtualNetworkFilterEnabled":false,"virtualNetworkRules":[],"EnabledApiTypes":"MongoDB","disableKeyBasedMetadataWriteAccess":false,"enableFreeTier":false,"enableAnalyticalStorage":false,"analyticalStorageConfiguration":{"schemaType":"FullFidelity"},"instanceId":"9872bc75-d0ea-4ac0-9c97-d4048f081534","createMode":"Default","databaseAccountOfferType":"Standard","enableFullFidelityChangeFeed":false,"defaultIdentity":"FirstPartyIdentity","networkAclBypass":"None","disableLocalAuth":false,"consistencyPolicy":{"defaultConsistencyLevel":"Session","maxIntervalInSeconds":5,"maxStalenessPrefix":100},"apiProperties":{"serverVersion":"3.6"},"configurationOverrides":{"EnableBsonSchema":"True"},"writeLocations":[{"id":"cli000003-centralus","locationName":"Central
+        US","documentEndpoint":"https://cli000003-centralus.documents-test.windows-int.net:443/","provisioningState":"Succeeded","failoverPriority":0,"isZoneRedundant":false}],"readLocations":[{"id":"cli000003-centralus","locationName":"Central
+        US","documentEndpoint":"https://cli000003-centralus.documents-test.windows-int.net:443/","provisioningState":"Succeeded","failoverPriority":0,"isZoneRedundant":false}],"locations":[{"id":"cli000003-centralus","locationName":"Central
+        US","documentEndpoint":"https://cli000003-centralus.documents-test.windows-int.net:443/","provisioningState":"Succeeded","failoverPriority":0,"isZoneRedundant":false}],"failoverPolicies":[{"id":"cli000003-centralus","locationName":"Central
+        US","failoverPriority":0}],"cors":[],"capabilities":[{"name":"EnableMongo"}],"ipRules":[],"backupPolicy":{"type":"Continuous","continuousModeProperties":{"tier":"Continuous30Days"}},"networkAclBypassResourceIds":[],"diagnosticLogSettings":{"enableFullTextQuery":"None"},"keysMetadata":{"primaryMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"},"secondaryMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"},"primaryReadonlyMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"},"secondaryReadonlyMasterKey":{"generationTime":"2022-08-02T06:34:44.9121025Z"}}},"identity":{"type":"None"}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '2758'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:15 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 61CD0FCA5D2945458D4FFFB41762FE1B Ref B: STBEDGE0109 Ref C: 2022-08-02T06:35:15Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: '{"properties": {"resource": {"id": "cli000004"}, "options": {}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb database create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -a -n
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: PUT
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Enqueued"}'
+    headers:
+      azure-asyncoperation:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/a46e3286-54a5-4633-bbf2-14e58a198157?api-version=2022-02-15-preview
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:16 GMT
+      location:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/operationResults/a46e3286-54a5-4633-bbf2-14e58a198157?api-version=2022-02-15-preview
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1197'
+      x-msedge-ref:
+      - 'Ref A: 8083837888014F1EA7F74D9ACE754275 Ref B: WSTEDGE1110 Ref C: 2022-08-02T06:35:15Z'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb database create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -n
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/a46e3286-54a5-4633-bbf2-14e58a198157?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Succeeded"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '22'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:46 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: C1A266B5C6AC4A6DA8DA0DF458D0DCD9 Ref B: WSTEDGE1110 Ref C: 2022-08-02T06:35:46Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb database create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -n
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases","name":"cli000004","properties":{"resource":{"id":"cli000004","_rid":"hNH0jQ==","_etag":"\"00003708-0000-0300-0000-62e8c5a90000\"","_ts":1659422121}}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '417'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:47 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 2583D34AC243468CA20F830FC6A33C6B Ref B: WSTEDGE1110 Ref C: 2022-08-02T06:35:47Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection exists
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"code":"NotFound","message":"Message: {\"code\":\"NotFound\",\"message\":\"Message:
+        {\\\"Errors\\\":[\\\"Resource Not Found. Learn more: https:\\\\/\\\\/aka.ms\\\\/cosmosdb-tsg-not-found\\\"]}\\r\\nActivityId:
+        58358dc6-122d-11ed-bd47-586c25a9f1e0, Request URI: /apps/32358b3e-6411-4fd7-bdd8-638b73d7cba9/services/f96ff8f1-e934-4821-aac4-c338812a680e/partitions/8e85df37-a9a0-4b43-a3a8-c55d712aaa5b/replicas/133033329072956175s,
+        RequestStats: \\r\\nRequestStartTime: 2022-08-02T06:35:48.5292699Z, RequestEndTime:
+        2022-08-02T06:35:48.5392642Z,  Number of regions attempted:1\\r\\n{\\\"systemHistory\\\":[{\\\"dateUtc\\\":\\\"2022-08-02T06:34:50.7081763Z\\\",\\\"cpu\\\":3.952,\\\"memory\\\":151771932.000,\\\"threadInfo\\\":{\\\"isThreadStarving\\\":\\\"False\\\",\\\"threadWaitIntervalInMs\\\":0.0631,\\\"availableThreads\\\":32764,\\\"minThreads\\\":24,\\\"maxThreads\\\":32767},\\\"numberOfOpenTcpConnection\\\":28},{\\\"dateUtc\\\":\\\"2022-08-02T06:35:00.7183790Z\\\",\\\"cpu\\\":5.064,\\\"memory\\\":151799620.000,\\\"threadInfo\\\":{\\\"isThreadStarving\\\":\\\"False\\\",\\\"threadWaitIntervalInMs\\\":0.0804,\\\"availableThreads\\\":32764,\\\"minThreads\\\":24,\\\"maxThreads\\\":32767},\\\"numberOfOpenTcpConnection\\\":28},{\\\"dateUtc\\\":\\\"2022-08-02T06:35:10.7285652Z\\\",\\\"cpu\\\":3.113,\\\"memory\\\":151819900.000,\\\"threadInfo\\\":{\\\"isThreadStarving\\\":\\\"False\\\",\\\"threadWaitIntervalInMs\\\":0.1281,\\\"availableThreads\\\":32764,\\\"minThreads\\\":24,\\\"maxThreads\\\":32767},\\\"numberOfOpenTcpConnection\\\":28},{\\\"dateUtc\\\":\\\"2022-08-02T06:35:20.7386980Z\\\",\\\"cpu\\\":4.297,\\\"memory\\\":151807576.000,\\\"threadInfo\\\":{\\\"isThreadStarving\\\":\\\"False\\\",\\\"threadWaitIntervalInMs\\\":0.2234,\\\"availableThreads\\\":32764,\\\"minThreads\\\":24,\\\"maxThreads\\\":32767},\\\"numberOfOpenTcpConnection\\\":28},{\\\"dateUtc\\\":\\\"2022-08-02T06:35:30.7487356Z\\\",\\\"cpu\\\":8.771,\\\"memory\\\":151811208.000,\\\"threadInfo\\\":{\\\"isThreadStarving\\\":\\\"False\\\",\\\"threadWaitIntervalInMs\\\":0.0911,\\\"availableThreads\\\":32765,\\\"minThreads\\\":24,\\\"maxThreads\\\":32767},\\\"numberOfOpenTcpConnection\\\":28},{\\\"dateUtc\\\":\\\"2022-08-02T06:35:40.7689733Z\\\",\\\"cpu\\\":14.376,\\\"memory\\\":151810692.000,\\\"threadInfo\\\":{\\\"isThreadStarving\\\":\\\"False\\\",\\\"threadWaitIntervalInMs\\\":0.1105,\\\"availableThreads\\\":32765,\\\"minThreads\\\":24,\\\"maxThreads\\\":32767},\\\"numberOfOpenTcpConnection\\\":28}]}\\r\\nRequestStart:
+        2022-08-02T06:35:48.5292699Z; ResponseTime: 2022-08-02T06:35:48.5392642Z;
+        StoreResult: StorePhysicalAddress: rntbd://10.0.0.11:11000/apps/32358b3e-6411-4fd7-bdd8-638b73d7cba9/services/f96ff8f1-e934-4821-aac4-c338812a680e/partitions/8e85df37-a9a0-4b43-a3a8-c55d712aaa5b/replicas/133033329072956175s,
+        LSN: 10, GlobalCommittedLsn: 10, PartitionKeyRangeId: , IsValid: True, StatusCode:
+        404, SubStatusCode: 0, RequestCharge: 1, ItemLSN: -1, SessionToken: -1#10,
+        UsingLocalLSN: False, TransportException: null, BELatencyMs: 1.298, ActivityId:
+        58358dc6-122d-11ed-bd47-586c25a9f1e0, RetryAfterInMs: , TransportRequestTimeline:
+        {\\\"requestTimeline\\\":[{\\\"event\\\": \\\"Created\\\", \\\"startTimeUtc\\\":
+        \\\"2022-08-02T06:35:48.5292699Z\\\", \\\"durationInMs\\\": 0.0642},{\\\"event\\\":
+        \\\"ChannelAcquisitionStarted\\\", \\\"startTimeUtc\\\": \\\"2022-08-02T06:35:48.5293341Z\\\",
+        \\\"durationInMs\\\": 0.0411},{\\\"event\\\": \\\"Pipelined\\\", \\\"startTimeUtc\\\":
+        \\\"2022-08-02T06:35:48.5293752Z\\\", \\\"durationInMs\\\": 0.5082},{\\\"event\\\":
+        \\\"Transit Time\\\", \\\"startTimeUtc\\\": \\\"2022-08-02T06:35:48.5298834Z\\\",
+        \\\"durationInMs\\\": 8.2904},{\\\"event\\\": \\\"Received\\\", \\\"startTimeUtc\\\":
+        \\\"2022-08-02T06:35:48.5381738Z\\\", \\\"durationInMs\\\": 0.2089},{\\\"event\\\":
+        \\\"Completed\\\", \\\"startTimeUtc\\\": \\\"2022-08-02T06:35:48.5383827Z\\\",
+        \\\"durationInMs\\\": 0}],\\\"serviceEndpointStats\\\":{\\\"inflightRequests\\\":1,\\\"openConnections\\\":1},\\\"connectionStats\\\":{\\\"waitforConnectionInit\\\":\\\"False\\\",\\\"callsPendingReceive\\\":0,\\\"lastSendAttempt\\\":\\\"2022-08-02T06:35:48.3292507Z\\\",\\\"lastSend\\\":\\\"2022-08-02T06:35:48.3292507Z\\\",\\\"lastReceive\\\":\\\"2022-08-02T06:35:48.3292507Z\\\"},\\\"requestSizeInBytes\\\":492,\\\"responseMetadataSizeInBytes\\\":135,\\\"responseBodySizeInBytes\\\":87};\\r\\n
+        ResourceType: Collection, OperationType: Read\\r\\nRequestStart: 2022-08-02T06:35:48.5292699Z;
+        ResponseTime: 2022-08-02T06:35:48.5392642Z; StoreResult: StorePhysicalAddress:
+        rntbd://10.0.0.10:11000/apps/32358b3e-6411-4fd7-bdd8-638b73d7cba9/services/f96ff8f1-e934-4821-aac4-c338812a680e/partitions/8e85df37-a9a0-4b43-a3a8-c55d712aaa5b/replicas/133033329072956177s,
+        LSN: 10, GlobalCommittedLsn: 10, PartitionKeyRangeId: , IsValid: True, StatusCode:
+        404, SubStatusCode: 0, RequestCharge: 1, ItemLSN: -1, SessionToken: -1#10,
+        UsingLocalLSN: False, TransportException: null, BELatencyMs: 1.155, ActivityId:
+        58358dc6-122d-11ed-bd47-586c25a9f1e0, RetryAfterInMs: , TransportRequestTimeline:
+        {\\\"requestTimeline\\\":[{\\\"event\\\": \\\"Created\\\", \\\"startTimeUtc\\\":
+        \\\"2022-08-02T06:35:48.5292699Z\\\", \\\"durationInMs\\\": 0.0096},{\\\"event\\\":
+        \\\"ChannelAcquisitionStarted\\\", \\\"startTimeUtc\\\": \\\"2022-08-02T06:35:48.5292795Z\\\",
+        \\\"durationInMs\\\": 0.0069},{\\\"event\\\": \\\"Pipelined\\\", \\\"startTimeUtc\\\":
+        \\\"2022-08-02T06:35:48.5292864Z\\\", \\\"durationInMs\\\": 0.1031},{\\\"event\\\":
+        \\\"Transit Time\\\", \\\"startTimeUtc\\\": \\\"2022-08-02T06:35:48.5293895Z\\\",
+        \\\"durationInMs\\\": 2.2664},{\\\"event\\\": \\\"Received\\\", \\\"startTimeUtc\\\":
+        \\\"2022-08-02T06:35:48.5316559Z\\\", \\\"durationInMs\\\": 0.5673},{\\\"event\\\":
+        \\\"Completed\\\", \\\"startTimeUtc\\\": \\\"2022-08-02T06:35:48.5322232Z\\\",
+        \\\"durationInMs\\\": 0}],\\\"serviceEndpointStats\\\":{\\\"inflightRequests\\\":1,\\\"openConnections\\\":1},\\\"connectionStats\\\":{\\\"waitforConnectionInit\\\":\\\"False\\\",\\\"callsPendingReceive\\\":0,\\\"lastSendAttempt\\\":\\\"2022-08-02T06:35:47.8492319Z\\\",\\\"lastSend\\\":\\\"2022-08-02T06:35:47.8492319Z\\\",\\\"lastReceive\\\":\\\"2022-08-02T06:35:47.8492319Z\\\"},\\\"requestSizeInBytes\\\":492,\\\"responseMetadataSizeInBytes\\\":135,\\\"responseBodySizeInBytes\\\":87};\\r\\n
+        ResourceType: Collection, OperationType: Read\\r\\n, SDK: Microsoft.Azure.Documents.Common/2.14.0\"},
+        Request URI: /dbs/cli000004/colls/cli000002, RequestStats: , SDK: Microsoft.Azure.Documents.Common/2.14.0"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '6543'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:47 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 5F9FE70587AE4686BCED5B00FC6A544D Ref B: WSTEDGE0617 Ref C: 2022-08-02T06:35:48Z'
+    status:
+      code: 404
+      message: NotFound
+- request:
+    body: '{"properties": {"resource": {"id": "cli000002", "shardKey": {"theShardKey":
+      "Hash"}}, "options": {}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '101'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -a -d -n --shard
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: PUT
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Enqueued"}'
+    headers:
+      azure-asyncoperation:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/01199fd2-bf13-4e04-8dee-2b3541a8661b?api-version=2022-02-15-preview
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:35:49 GMT
+      location:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002/operationResults/01199fd2-bf13-4e04-8dee-2b3541a8661b?api-version=2022-02-15-preview
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1195'
+      x-msedge-ref:
+      - 'Ref A: EB98C92859904E57834E868AB1CBA2C7 Ref B: CO1EDGE1814 Ref C: 2022-08-02T06:35:48Z'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --shard
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/01199fd2-bf13-4e04-8dee-2b3541a8661b?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Succeeded"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '22'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:19 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: A2C59D04914642E1BB92CEA5D6D657C2 Ref B: CO1EDGE1814 Ref C: 2022-08-02T06:36:19Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --shard
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections","name":"cli000002","properties":{"resource":{"id":"cli000002","_rid":"hNH0jZ9vpMk=","_etag":"\"00003a08-0000-0300-0000-62e8c5cc0000\"","_ts":1659422156,"shardKey":{"theShardKey":"Hash"},"indexes":[{"key":{"keys":["_id"]},"options":{}},{"key":{"keys":["DocumentDBDefaultIndex"]},"options":{}}]}}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '596'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:19 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 6326C47D81AC4C99806D4CEB10965AA1 Ref B: CO1EDGE1814 Ref C: 2022-08-02T06:36:19Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --idx
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections","name":"cli000002","properties":{"resource":{"id":"cli000002","_rid":"hNH0jZ9vpMk=","_etag":"\"00003a08-0000-0300-0000-62e8c5cc0000\"","_ts":1659422156,"shardKey":{"theShardKey":"Hash"},"indexes":[{"key":{"keys":["_id"]},"options":{}},{"key":{"keys":["DocumentDBDefaultIndex"]},"options":{}}]}}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '596'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:20 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 9C6DB02FA15240FB829D06218141065F Ref B: WSTEDGE1015 Ref C: 2022-08-02T06:36:20Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: '{"properties": {"resource": {"id": "cli000002", "shardKey": {"theShardKey":
+      "Hash"}, "indexes": [{"key": {"keys": ["_ts"]}, "options": {"expireAfterSeconds":
+      1000}}]}, "options": {}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection update
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '183'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -a -d -n --idx
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: PUT
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Enqueued"}'
+    headers:
+      azure-asyncoperation:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3494aebd-4ecc-4d9f-9d5c-82e8a4290791?api-version=2022-02-15-preview
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:21 GMT
+      location:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002/operationResults/3494aebd-4ecc-4d9f-9d5c-82e8a4290791?api-version=2022-02-15-preview
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1198'
+      x-msedge-ref:
+      - 'Ref A: B5E9C96BAAB545608EE1B726BCD3E2E3 Ref B: WSTEDGE1015 Ref C: 2022-08-02T06:36:21Z'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --idx
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3494aebd-4ecc-4d9f-9d5c-82e8a4290791?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Succeeded"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '22'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:51 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 8DAA730954F1412B868251FAC1975B94 Ref B: WSTEDGE1015 Ref C: 2022-08-02T06:36:51Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --idx
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections","name":"cli000002","properties":{"resource":{"id":"cli000002","_rid":"hNH0jZ9vpMk=","_etag":"\"00004008-0000-0300-0000-62e8c5ea0000\"","_ts":1659422186,"shardKey":{"theShardKey":"Hash"},"indexes":[{"key":{"keys":["_id"]},"options":{}},{"key":{"keys":["_ts"]},"options":{"expireAfterSeconds":1000}},{"key":{"keys":["DocumentDBDefaultIndex"]},"options":{}}]}}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '659'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:51 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 3D381073EEB944669EE56B01C9CF8A4F Ref B: WSTEDGE1015 Ref C: 2022-08-02T06:36:51Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection show
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections","name":"cli000002","properties":{"resource":{"id":"cli000002","_rid":"hNH0jZ9vpMk=","_etag":"\"00004008-0000-0300-0000-62e8c5ea0000\"","_ts":1659422186,"shardKey":{"theShardKey":"Hash"},"indexes":[{"key":{"keys":["_id"]},"options":{}},{"key":{"keys":["_ts"]},"options":{"expireAfterSeconds":1000}},{"key":{"keys":["DocumentDBDefaultIndex"]},"options":{}}]}}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '659'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:52 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 97589AA370E747ECB1083E86E624F3E7 Ref B: WSTEDGE0610 Ref C: 2022-08-02T06:36:52Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection list
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections","name":"cli000002","properties":{"resource":{"id":"cli000002","_rid":"hNH0jZ9vpMk=","_etag":"\"00004008-0000-0300-0000-62e8c5ea0000\"","_ts":1659422186,"shardKey":{"theShardKey":"Hash"},"indexes":[{"key":{"keys":["_id"]},"options":{}},{"key":{"keys":["_ts"]},"options":{"expireAfterSeconds":1000}},{"key":{"keys":["DocumentDBDefaultIndex"]},"options":{}}]}}}]}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '671'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:53 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 8D2CB2092E9B41E6B7ADB4A49906688D Ref B: CO1EDGE1508 Ref C: 2022-08-02T06:36:53Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection exists
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002","type":"Microsoft.DocumentDB/databaseAccounts/mongodbDatabases/collections","name":"cli000002","properties":{"resource":{"id":"cli000002","_rid":"hNH0jZ9vpMk=","_etag":"\"00004008-0000-0300-0000-62e8c5ea0000\"","_ts":1659422186,"shardKey":{"theShardKey":"Hash"},"indexes":[{"key":{"keys":["_id"]},"options":{}},{"key":{"keys":["_ts"]},"options":{"expireAfterSeconds":1000}},{"key":{"keys":["DocumentDBDefaultIndex"]},"options":{}}]}}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '659'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:36:54 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: CE954F39B05B485BB3BEC08FBF1EF3D3 Ref B: STBEDGE0213 Ref C: 2022-08-02T06:36:54Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection delete
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      ParameterSetName:
+      - -g -a -d -n --yes
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: DELETE
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Enqueued"}'
+    headers:
+      azure-asyncoperation:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/c953a188-f778-43f0-a56e-107b3f4264b3?api-version=2022-02-15-preview
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:41:55 GMT
+      location:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002/operationResults/c953a188-f778-43f0-a56e-107b3f4264b3?api-version=2022-02-15-preview
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-ms-ratelimit-remaining-subscription-deletes:
+      - '14997'
+      x-msedge-ref:
+      - 'Ref A: 31BA24CAF3A546B69AE7865CC2342EEF Ref B: CO1EDGE1522 Ref C: 2022-08-02T06:41:54Z'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection delete
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --yes
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/c953a188-f778-43f0-a56e-107b3f4264b3?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"status":"Succeeded"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '22'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:42:25 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 3EBDFD54F66446578EE1FBC329A275DB Ref B: CO1EDGE1522 Ref C: 2022-08-02T06:42:25Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection list
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"value":[]}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '12'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:42:25 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: A06D23106CC748BA9E44C2E179C01FB0 Ref B: STBEDGE0618 Ref C: 2022-08-02T06:42:26Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/7.0.0b6 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/restorableDatabaseAccounts?api-version=2022-02-15-preview
+  response:
+    body:
+      string: '{"value":[{"name":"6d1bc8df-bec5-436f-a553-7434fd6aab7c","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/6d1bc8df-bec5-436f-a553-7434fd6aab7c","properties":{"accountName":"amisimongopitracc","apiType":"MongoDB","creationTime":"2022-07-26T22:36:57Z","oldestRestorableTime":"2022-07-26T22:36:57Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"147b10ef-a100-4348-bb0f-d23d05ecd52b","creationTime":"2022-07-26T22:36:58Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"56024f20-45aa-4a46-9651-a4b4c1ff17da","creationTime":"2022-07-26T23:06:03Z"}]}},{"name":"496507f5-a614-4481-87f4-ea33a22c629b","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/496507f5-a614-4481-87f4-ea33a22c629b","properties":{"accountName":"amisisqlpitracc","apiType":"Sql","creationTime":"2022-07-26T20:15:28Z","oldestRestorableTime":"2022-07-26T20:15:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"bd2a39f0-5c9e-4535-ba6a-725d695be28e","creationTime":"2022-07-26T20:15:29Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"c4d9e7d4-4a51-4b18-bcb7-c0a1112f5857","creationTime":"2022-07-26T23:11:55Z"}]}},{"name":"b64fed24-3954-42c6-8188-c196655dacfb","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/b64fed24-3954-42c6-8188-c196655dacfb","properties":{"accountName":"cli2jrve2f6qraa","apiType":"Sql","creationTime":"2022-08-02T03:32:47Z","oldestRestorableTime":"2022-08-02T03:32:47Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"73ea2aab-36e4-4954-944b-cdffd3bec7a1","creationTime":"2022-08-02T03:32:48Z"}]}},{"name":"9872bc75-d0ea-4ac0-9c97-d4048f081534","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/9872bc75-d0ea-4ac0-9c97-d4048f081534","properties":{"accountName":"cli000003","apiType":"MongoDB","creationTime":"2022-08-02T06:34:45Z","oldestRestorableTime":"2022-08-02T06:34:45Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"66c45298-3ae8-4a2b-85d1-8e5401bb7600","creationTime":"2022-08-02T06:34:47Z"}]}},{"name":"1f2339c5-a4f2-4417-b99b-6522fbdbf221","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/1f2339c5-a4f2-4417-b99b-6522fbdbf221","properties":{"accountName":"clilc4xlhghzptd","apiType":"Sql","creationTime":"2022-08-02T00:24:11Z","oldestRestorableTime":"2022-08-02T00:24:11Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"26219972-aebc-4d9d-a1fe-f03205ac273e","creationTime":"2022-08-02T00:24:12Z"}]}},{"name":"c52ce410-d8c5-4752-81f1-d3d8fba9a841","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/c52ce410-d8c5-4752-81f1-d3d8fba9a841","properties":{"accountName":"databaseaccount258","apiType":"Sql","creationTime":"2022-07-29T16:14:14Z","oldestRestorableTime":"2022-07-29T16:14:14Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"a59fccc2-d4f3-401f-9d2b-8969061db623","creationTime":"2022-07-29T16:14:15Z"}]}},{"name":"6f80d294-9935-42cb-bf3c-1e161f00a2d6","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/6f80d294-9935-42cb-bf3c-1e161f00a2d6","properties":{"accountName":"ddhamothsqlpitracc","apiType":"Sql","creationTime":"2022-07-27T21:15:39Z","oldestRestorableTime":"2022-07-27T21:15:39Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"45434c76-a7ba-468f-ab6d-e3f744145c90","creationTime":"2022-07-27T21:15:40Z"}]}},{"name":"abf28c3d-6a02-45ef-b2de-bf54191c1a13","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/abf28c3d-6a02-45ef-b2de-bf54191c1a13","properties":{"accountName":"inaccount-restore-stage-sql-validation","apiType":"Sql","creationTime":"2022-07-27T19:53:41Z","oldestRestorableTime":"2022-07-27T19:53:41Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"493c099e-6950-4998-9037-ecfca87d2608","creationTime":"2022-07-29T20:08:11Z"},{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"8bcf724d-4820-4c03-ad6f-47f3b7d19667","creationTime":"2022-07-27T19:53:42Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"002d4812-929f-4838-961e-b0d789be9aca","creationTime":"2022-07-28T03:06:55Z","deletionTime":"2022-07-28T04:30:21Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"4110be56-f755-419c-a4a0-71418ed10fbb","creationTime":"2022-07-28T05:48:05Z","deletionTime":"2022-07-29T18:50:20Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"d176a88f-7197-4cfb-8a50-2c4f73d451ff","creationTime":"2022-07-27T20:46:46Z","deletionTime":"2022-07-27T23:46:13Z"}]}},{"name":"6231e723-f06f-460b-bc3f-e0ed9395e10e","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/6231e723-f06f-460b-bc3f-e0ed9395e10e","properties":{"accountName":"inaccountrestore-stage-pitr-mongo-validation","apiType":"MongoDB","creationTime":"2022-07-27T22:32:31Z","oldestRestorableTime":"2022-07-27T22:32:31Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"7d629633-b639-427d-af2e-b5a0cfa101d7","creationTime":"2022-07-27T22:32:32Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"3819d602-643e-4f9c-8d76-8b73daa153c0","creationTime":"2022-07-28T20:34:15Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"f09f5d0d-9dd8-44c4-9d2d-a6efea5cd458","creationTime":"2022-07-27T22:35:23Z","deletionTime":"2022-07-28T19:31:50Z"}]}},{"name":"83a7d6fe-048f-4ea9-9ad2-ec3058420b12","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/83a7d6fe-048f-4ea9-9ad2-ec3058420b12","properties":{"accountName":"mongo-db00046","apiType":"MongoDB","creationTime":"2022-07-29T03:49:10Z","oldestRestorableTime":"2022-07-29T03:49:10Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"855d5483-8fb2-4f56-b803-806f87431d81","creationTime":"2022-07-29T03:49:11Z"}]}},{"name":"04c01fd1-0b49-4c47-9947-c72bac781634","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/04c01fd1-0b49-4c47-9947-c72bac781634","properties":{"accountName":"cli2xymycevnkhe","apiType":"Sql","creationTime":"2022-08-02T02:11:50Z","deletionTime":"2022-08-02T02:25:19Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"27a5692b-39f5-48a4-afcb-39075b505cb4","creationTime":"2022-08-02T02:11:51Z","deletionTime":"2022-08-02T02:25:19Z"}]}},{"name":"07e83e57-988c-48a1-8fd9-2251b515a78a","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/07e83e57-988c-48a1-8fd9-2251b515a78a","properties":{"accountName":"clikf5kscxwauws","apiType":"Sql","creationTime":"2022-08-02T00:31:41Z","deletionTime":"2022-08-02T00:34:04Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"ffa9e89f-b7bf-494c-bed4-4431fa476f0d","creationTime":"2022-08-02T00:31:42Z","deletionTime":"2022-08-02T00:34:04Z"}]}},{"name":"15325b63-b506-4b6b-a48f-f3986507f89b","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/15325b63-b506-4b6b-a48f-f3986507f89b","properties":{"accountName":"clixpochrhqw2c2","apiType":"Sql","creationTime":"2022-08-02T03:33:13Z","deletionTime":"2022-08-02T03:52:47Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"cb96e5f6-846c-4cf0-a5ce-e5027f15969f","creationTime":"2022-08-02T03:33:14Z","deletionTime":"2022-08-02T03:52:47Z"}]}},{"name":"1efbacbe-f833-42f7-8c54-8fceada0f4e6","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/1efbacbe-f833-42f7-8c54-8fceada0f4e6","properties":{"accountName":"databaseaccount6208","apiType":"Sql","creationTime":"2022-07-27T20:39:07Z","deletionTime":"2022-07-27T20:52:21Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"c8e2016f-91da-4f00-82bf-a86a550609ba","creationTime":"2022-07-27T20:39:08Z","deletionTime":"2022-07-27T20:52:21Z"}]}},{"name":"20e95cd6-da60-44fd-9395-d73c8299ec47","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/20e95cd6-da60-44fd-9395-d73c8299ec47","properties":{"accountName":"databaseaccount6364","apiType":"MongoDB","creationTime":"2022-07-29T07:52:59Z","deletionTime":"2022-07-29T08:04:55Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"1cbd5f71-fee0-4df6-9433-99ece01d648e","creationTime":"2022-07-29T07:53:01Z","deletionTime":"2022-07-29T08:04:55Z"}]}},{"name":"29cdbecd-fd00-4216-9e69-cc1544a1c1d1","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/29cdbecd-fd00-4216-9e69-cc1544a1c1d1","properties":{"accountName":"cliaen5hb6fbbtn","apiType":"Sql","creationTime":"2022-08-02T00:52:15Z","deletionTime":"2022-08-02T00:57:26Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"ef2a8490-0eab-4953-8452-4e3de68ac346","creationTime":"2022-08-02T00:52:16Z","deletionTime":"2022-08-02T00:57:26Z"}]}},{"name":"2f6d8adb-9b2e-4c71-9e45-412dde225cbc","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/2f6d8adb-9b2e-4c71-9e45-412dde225cbc","properties":{"accountName":"climnnvv27av3pn","apiType":"MongoDB","creationTime":"2022-08-02T04:39:21Z","deletionTime":"2022-08-02T04:52:55Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"20923bbf-2226-44ad-a2bb-ed879be5bf27","creationTime":"2022-08-02T04:39:22Z","deletionTime":"2022-08-02T04:52:55Z"}]}},{"name":"2fffbf07-c3b2-48e4-aa44-548382c639cb","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/2fffbf07-c3b2-48e4-aa44-548382c639cb","properties":{"accountName":"mongo-db00045","apiType":"MongoDB","creationTime":"2022-07-29T00:48:29Z","deletionTime":"2022-07-29T00:55:42Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"462f3efe-7f03-48be-a67d-f127c6e2c548","creationTime":"2022-07-29T00:48:31Z","deletionTime":"2022-07-29T00:55:42Z"}]}},{"name":"32b4ed91-02f8-4e15-9d50-5f4d8e5c60c4","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/32b4ed91-02f8-4e15-9d50-5f4d8e5c60c4","properties":{"accountName":"dbaccount60-3","apiType":"Sql","creationTime":"2022-07-29T20:12:06Z","deletionTime":"2022-07-29T20:14:28Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"24dbf34e-038b-4b5c-992f-bf121629c528","creationTime":"2022-07-29T20:12:07Z","deletionTime":"2022-07-29T20:14:28Z"}]}},{"name":"39e77063-709a-4c28-a212-c7010868499e","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/39e77063-709a-4c28-a212-c7010868499e","properties":{"accountName":"dbaccount60-1","apiType":"Sql","creationTime":"2022-07-29T08:34:59Z","deletionTime":"2022-07-29T08:52:37Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"e76a9a5f-9b86-4fb2-89c6-2830c4ada787","creationTime":"2022-07-29T08:35:00Z","deletionTime":"2022-07-29T08:52:37Z"}]}},{"name":"3b209a47-e449-4132-98c4-0320cc94a223","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/3b209a47-e449-4132-98c4-0320cc94a223","properties":{"accountName":"clijsuxilyvwdia","apiType":"Sql","creationTime":"2022-08-02T00:27:08Z","deletionTime":"2022-08-02T00:28:57Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"c2ccbfce-0977-4806-b3ad-45115429da83","creationTime":"2022-08-02T00:27:08Z","deletionTime":"2022-08-02T00:28:57Z"}]}},{"name":"3fdba2fd-ceaa-4abf-a784-518132ab4a5a","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/3fdba2fd-ceaa-4abf-a784-518132ab4a5a","properties":{"accountName":"clifzpeysqt733j","apiType":"Sql","creationTime":"2022-08-02T03:57:08Z","deletionTime":"2022-08-02T04:16:45Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"57429b57-a3eb-409b-805c-0ccc7ff1dfc6","creationTime":"2022-08-02T03:57:09Z","deletionTime":"2022-08-02T04:16:45Z"}]}},{"name":"46b5b470-9741-4420-afe1-605ee9a2604e","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/46b5b470-9741-4420-afe1-605ee9a2604e","properties":{"accountName":"mongo-db00045","apiType":"MongoDB","creationTime":"2022-07-29T01:49:10Z","deletionTime":"2022-07-29T04:19:49Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"02adb4fe-8eb3-403a-b7cd-391e7e6e45fb","creationTime":"2022-07-29T01:49:11Z","deletionTime":"2022-07-29T04:19:49Z"}]}},{"name":"61af47a7-42cf-40cf-a968-4d7ddb89ab4a","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/61af47a7-42cf-40cf-a968-4d7ddb89ab4a","properties":{"accountName":"clililgbjsn7gcr","apiType":"MongoDB","creationTime":"2022-08-02T05:02:04Z","deletionTime":"2022-08-02T05:15:50Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"a4d2b389-3806-4cb9-a945-445b5f831d4e","creationTime":"2022-08-02T05:02:05Z","deletionTime":"2022-08-02T05:15:50Z"}]}},{"name":"659d41b4-d5cc-4e2b-af14-c47e124d2ff1","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/659d41b4-d5cc-4e2b-af14-c47e124d2ff1","properties":{"accountName":"dbaccount60-2","apiType":"Sql","creationTime":"2022-07-29T19:34:46Z","deletionTime":"2022-07-29T19:37:03Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"e2ecfffb-83fb-4f4c-ae0d-66ab3d466849","creationTime":"2022-07-29T19:34:47Z","deletionTime":"2022-07-29T19:37:03Z"}]}},{"name":"6bfca8fa-fed2-479d-9caa-7c6836daeaf3","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/6bfca8fa-fed2-479d-9caa-7c6836daeaf3","properties":{"accountName":"databaseaccount6853","apiType":"Sql","creationTime":"2022-07-27T00:08:02Z","deletionTime":"2022-07-27T00:22:09Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"98ab050c-2768-45ac-bc25-e8fb61951223","creationTime":"2022-07-27T00:08:04Z","deletionTime":"2022-07-27T00:22:09Z"}]}},{"name":"73d597b9-dfea-4b4c-bbd9-634d392cff65","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/73d597b9-dfea-4b4c-bbd9-634d392cff65","properties":{"accountName":"databaseaccount5983","apiType":"Sql","creationTime":"2022-07-29T18:07:52Z","deletionTime":"2022-07-29T18:19:27Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"d184ba5b-4a2d-478a-beb8-be81e2ef40e7","creationTime":"2022-07-29T18:07:53Z","deletionTime":"2022-07-29T18:19:27Z"}]}},{"name":"7530d2fb-440f-421a-9694-91a3ea263679","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/7530d2fb-440f-421a-9694-91a3ea263679","properties":{"accountName":"dbaccount60-1","apiType":"Sql","creationTime":"2022-07-28T19:14:35Z","deletionTime":"2022-07-28T19:38:55Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"4bc54965-94be-48d5-898e-90497b8aed6d","creationTime":"2022-07-28T19:14:36Z","deletionTime":"2022-07-28T19:38:55Z"}]}},{"name":"76c0b71d-c680-4c13-a369-f06e11cbd1a8","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/76c0b71d-c680-4c13-a369-f06e11cbd1a8","properties":{"accountName":"dbaccount60-2","apiType":"Sql","creationTime":"2022-07-29T16:09:14Z","deletionTime":"2022-07-29T16:34:44Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"27be0a43-4eb7-4b59-9408-e12fb96d6d0b","creationTime":"2022-07-29T16:09:15Z","deletionTime":"2022-07-29T16:34:44Z"}]}},{"name":"91d028bd-d5d4-4244-9dff-5acf65c6da14","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/91d028bd-d5d4-4244-9dff-5acf65c6da14","properties":{"accountName":"dbaccount60-3","apiType":"Sql","creationTime":"2022-07-29T19:49:23Z","deletionTime":"2022-07-29T19:51:40Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"f4d4d1c5-af43-4859-8e12-e44e07267225","creationTime":"2022-07-29T19:49:24Z","deletionTime":"2022-07-29T19:51:40Z"}]}},{"name":"91d6ebd3-5629-449d-a7f3-f540ec9bd9d6","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/91d6ebd3-5629-449d-a7f3-f540ec9bd9d6","properties":{"accountName":"mongo-db00047","apiType":"MongoDB","creationTime":"2022-07-29T07:17:58Z","deletionTime":"2022-07-29T07:34:51Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"660b234a-5a3a-42b8-bb1b-6f791996f7db","creationTime":"2022-07-29T07:17:59Z","deletionTime":"2022-07-29T07:34:51Z"}]}},{"name":"93e47f3e-df5b-4349-bc8e-8d24814c884c","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/93e47f3e-df5b-4349-bc8e-8d24814c884c","properties":{"accountName":"clivatnvsqhc4zq","apiType":"Sql","creationTime":"2022-07-29T23:47:08Z","deletionTime":"2022-07-29T23:51:03Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"c6375caf-1036-4a22-a61a-3e3877ed5b67","creationTime":"2022-07-29T23:47:09Z","deletionTime":"2022-07-29T23:51:03Z"}]}},{"name":"99065f50-df6d-4717-959d-4f4cd8389765","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/99065f50-df6d-4717-959d-4f4cd8389765","properties":{"accountName":"cli34eqgtvepyzi","apiType":"Sql","creationTime":"2022-08-02T02:28:16Z","deletionTime":"2022-08-02T02:43:23Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"d8432eef-1916-433f-acf6-41516d6e38d2","creationTime":"2022-08-02T02:28:17Z","deletionTime":"2022-08-02T02:43:23Z"}]}},{"name":"a836bd39-826e-42e3-891b-3b138dcc97d5","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/a836bd39-826e-42e3-891b-3b138dcc97d5","properties":{"accountName":"mongo-db00045","apiType":"MongoDB","creationTime":"2022-07-28T23:36:36Z","deletionTime":"2022-07-29T00:04:01Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"a1da469b-af3a-4722-b411-2034385e9442","creationTime":"2022-07-28T23:36:37Z","deletionTime":"2022-07-29T00:04:01Z"}]}},{"name":"ad471cf9-0ac2-4099-bead-de563570b8a8","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/ad471cf9-0ac2-4099-bead-de563570b8a8","properties":{"accountName":"dbaccount60-4","apiType":"Sql","creationTime":"2022-07-29T20:41:13Z","deletionTime":"2022-07-29T20:56:54Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"922e877e-3d4e-4492-8606-3eaaef258ba3","creationTime":"2022-07-29T20:41:14Z","deletionTime":"2022-07-29T20:56:54Z"},{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"dfd8b54a-e1e6-4c90-bf41-c4062c9c6df5","creationTime":"2022-07-29T20:43:25Z","deletionTime":"2022-07-29T20:56:54Z"}]}},{"name":"b04a6271-ee12-4a51-9f77-3e794c9900f4","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/b04a6271-ee12-4a51-9f77-3e794c9900f4","properties":{"accountName":"clilfnw4pxehtt4","apiType":"MongoDB","creationTime":"2022-08-02T05:59:57Z","deletionTime":"2022-08-02T06:24:59Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"6c157821-01fc-4ed6-9b8e-50ddd761e90b","creationTime":"2022-08-02T05:59:58Z","deletionTime":"2022-08-02T06:24:59Z"}]}},{"name":"b0aa1fe2-71a5-47e4-83d2-2d6861397b98","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/b0aa1fe2-71a5-47e4-83d2-2d6861397b98","properties":{"accountName":"databaseaccount3865","apiType":"MongoDB","creationTime":"2022-07-27T20:58:14Z","deletionTime":"2022-07-27T21:01:14Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"eccedc33-9d4e-4cad-8223-14a28ac453b8","creationTime":"2022-07-27T20:58:15Z","deletionTime":"2022-07-27T21:01:14Z"}]}},{"name":"b42d1f70-e2eb-458c-a9b0-4754e67f4a47","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/b42d1f70-e2eb-458c-a9b0-4754e67f4a47","properties":{"accountName":"databaseaccount5580","apiType":"Sql","creationTime":"2022-07-29T09:09:58Z","deletionTime":"2022-07-29T09:21:09Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"761adb13-83fd-4d05-878e-83cd5f9c6e56","creationTime":"2022-07-29T09:10:00Z","deletionTime":"2022-07-29T09:21:09Z"}]}},{"name":"b7a575ab-7cd6-47f2-be8d-2e0b5ff4dab0","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/b7a575ab-7cd6-47f2-be8d-2e0b5ff4dab0","properties":{"accountName":"dbaccount60-5","apiType":"Sql","creationTime":"2022-07-29T21:07:25Z","deletionTime":"2022-07-29T21:49:30Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"506f8304-889c-4ab7-8982-6d7a37fae13f","creationTime":"2022-07-29T21:09:40Z","deletionTime":"2022-07-29T21:30:54Z"},{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"6a2fc5bc-d84e-4a4a-8f49-1663310a9908","creationTime":"2022-07-29T21:07:26Z","deletionTime":"2022-07-29T21:49:30Z"},{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"b1c56393-c3a7-4a14-9a66-78df5f64a470","creationTime":"2022-07-29T21:37:00Z","deletionTime":"2022-07-29T21:49:30Z"}]}},{"name":"bb82276f-56ad-4dbe-bc34-4596863010eb","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/bb82276f-56ad-4dbe-bc34-4596863010eb","properties":{"accountName":"mongo-db00045","apiType":"MongoDB","creationTime":"2022-07-28T23:11:35Z","deletionTime":"2022-07-28T23:17:54Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"3f695deb-f6bc-48be-ac38-28b09fc9f156","creationTime":"2022-07-28T23:11:36Z","deletionTime":"2022-07-28T23:17:54Z"}]}},{"name":"bd94449f-2b5c-416e-aa00-977b0d168389","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/bd94449f-2b5c-416e-aa00-977b0d168389","properties":{"accountName":"clieflcbovj2xaw","apiType":"Sql","creationTime":"2022-08-02T02:47:54Z","deletionTime":"2022-08-02T03:22:12Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"829137b1-2afb-40e7-9f9d-2950c10299ef","creationTime":"2022-08-02T02:47:55Z","deletionTime":"2022-08-02T03:22:12Z"}]}},{"name":"cca22726-7448-4ac6-9199-7e082f451c9f","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/cca22726-7448-4ac6-9199-7e082f451c9f","properties":{"accountName":"dbaccount60-2","apiType":"Sql","creationTime":"2022-07-29T08:56:06Z","deletionTime":"2022-07-29T09:20:20Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"e7cc2167-88b9-4176-9200-e757359e1475","creationTime":"2022-07-29T08:56:07Z","deletionTime":"2022-07-29T09:20:20Z"}]}},{"name":"cdcc485d-c1df-4183-adc3-7e9e0a3d939d","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/cdcc485d-c1df-4183-adc3-7e9e0a3d939d","properties":{"accountName":"mongo-db00044","apiType":"MongoDB","creationTime":"2022-07-29T03:20:45Z","deletionTime":"2022-07-29T03:38:50Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"cc11eae4-76e7-4ee3-ad30-86e032fa9f40","creationTime":"2022-07-29T03:20:46Z","deletionTime":"2022-07-29T03:38:50Z"}]}},{"name":"d3cefe71-f811-46cc-a626-e7be3b7b58a7","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/d3cefe71-f811-46cc-a626-e7be3b7b58a7","properties":{"accountName":"databaseaccount6575","apiType":"MongoDB","creationTime":"2022-07-29T08:29:19Z","deletionTime":"2022-07-29T08:42:35Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"a075a2f2-b016-46b4-9042-e9ed68908556","creationTime":"2022-07-29T08:29:20Z","deletionTime":"2022-07-29T08:42:35Z"}]}},{"name":"d855f897-de0f-4a94-8295-f1557db40be5","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/d855f897-de0f-4a94-8295-f1557db40be5","properties":{"accountName":"dbaccount60-3","apiType":"Sql","creationTime":"2022-07-29T17:28:39Z","deletionTime":"2022-07-29T17:51:59Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"b2e3ec33-2810-49d7-b709-fae35a63182d","creationTime":"2022-07-29T17:28:40Z","deletionTime":"2022-07-29T17:51:59Z"}]}},{"name":"d8a9fc4c-bdf6-4420-b7d9-361bea6bd99a","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/d8a9fc4c-bdf6-4420-b7d9-361bea6bd99a","properties":{"accountName":"dbaccount60-3","apiType":"Sql","creationTime":"2022-07-29T18:07:09Z","deletionTime":"2022-07-29T18:24:23Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"8f0edab2-74fd-4f83-935e-76182b6727e8","creationTime":"2022-07-29T18:07:10Z","deletionTime":"2022-07-29T18:24:23Z"}]}},{"name":"e008e48a-172e-4489-b171-4720511e3440","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/e008e48a-172e-4489-b171-4720511e3440","properties":{"accountName":"mongo-db00045","apiType":"MongoDB","creationTime":"2022-07-29T06:51:51Z","deletionTime":"2022-07-29T07:08:17Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"871e6445-1010-4d81-8ae4-497d7382d96b","creationTime":"2022-07-29T06:51:52Z","deletionTime":"2022-07-29T07:08:17Z"}]}},{"name":"e571736a-0faa-4723-a63e-bc0c78b05c6c","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/e571736a-0faa-4723-a63e-bc0c78b05c6c","properties":{"accountName":"clig4g5n3kutsfg","apiType":"Sql","creationTime":"2022-08-02T00:37:07Z","deletionTime":"2022-08-02T00:42:18Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"69863a61-6dea-4c9a-9b4d-70254a805cd4","creationTime":"2022-08-02T00:37:08Z","deletionTime":"2022-08-02T00:42:18Z"}]}},{"name":"e6a19bcd-9349-4846-aa91-fc7a645e012c","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/e6a19bcd-9349-4846-aa91-fc7a645e012c","properties":{"accountName":"mongo-db00044","apiType":"MongoDB","creationTime":"2022-07-29T04:06:22Z","deletionTime":"2022-07-29T04:25:57Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"e76db119-44b2-4314-8b0a-e4ba61c43d4a","creationTime":"2022-07-29T04:06:23Z","deletionTime":"2022-07-29T04:25:57Z"}]}},{"name":"e87a8500-b8c3-488b-9ad9-13c2c31798f6","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/e87a8500-b8c3-488b-9ad9-13c2c31798f6","properties":{"accountName":"dbaccount60-2","apiType":"Sql","creationTime":"2022-07-29T15:35:54Z","deletionTime":"2022-07-29T15:54:19Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"f7c96866-3323-48a7-90b0-b4783e970d6d","creationTime":"2022-07-29T15:35:55Z","deletionTime":"2022-07-29T15:54:19Z"}]}},{"name":"ee1e03f7-0fa0-44e9-b0c3-f1f6796951cc","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/ee1e03f7-0fa0-44e9-b0c3-f1f6796951cc","properties":{"accountName":"databaseaccount9783","apiType":"Sql","creationTime":"2022-07-29T18:27:07Z","deletionTime":"2022-07-29T18:40:25Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"2369599d-fde8-49bf-9e69-d811b4def3f1","creationTime":"2022-07-29T18:27:08Z","deletionTime":"2022-07-29T18:40:25Z"}]}},{"name":"f27e0ec5-1775-49ab-acf7-aeaa42131d75","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/f27e0ec5-1775-49ab-acf7-aeaa42131d75","properties":{"accountName":"cliqlydltu4tyfh","apiType":"MongoDB","creationTime":"2022-08-02T04:21:33Z","deletionTime":"2022-08-02T04:35:08Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"d4a4a893-fb7d-4e34-902e-39ffbf137d53","creationTime":"2022-08-02T04:21:34Z","deletionTime":"2022-08-02T04:35:08Z"}]}},{"name":"f7dba7fd-3597-470c-8109-46ed8beaafb5","location":"Central
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/centralus/restorableDatabaseAccounts/f7dba7fd-3597-470c-8109-46ed8beaafb5","properties":{"accountName":"mongo-db00048","apiType":"MongoDB","creationTime":"2022-07-29T07:47:26Z","deletionTime":"2022-07-29T08:16:37Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"Central
+        US","regionalDatabaseAccountInstanceId":"2bd57f9a-53c3-4a2f-a201-14f1e04e9a40","creationTime":"2022-07-29T07:47:28Z","deletionTime":"2022-07-29T08:16:37Z"}]}},{"name":"ff63e7cb-0c26-4a80-a265-301c62c026ac","location":"West
+        US","type":"Microsoft.DocumentDB/locations/restorableDatabaseAccounts","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/ff63e7cb-0c26-4a80-a265-301c62c026ac","properties":{"accountName":"databaseaccount3747","apiType":"MongoDB","creationTime":"2022-07-29T08:45:31Z","deletionTime":"2022-07-29T09:06:59Z","oldestRestorableTime":"2022-07-03T06:42:28Z","restorableLocations":[{"locationName":"West
+        US","regionalDatabaseAccountInstanceId":"daaeec60-0832-4cec-9ccc-8af15aee0375","creationTime":"2022-07-29T08:45:32Z","deletionTime":"2022-07-29T09:06:59Z"}]}}]}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '38999'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 02 Aug 2022 06:42:27 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-original-request-ids:
+      - ''
+      x-msedge-ref:
+      - 'Ref A: 72C9E78894BE46CDA22F3C97AD761EE3 Ref B: STBEDGE0620 Ref C: 2022-08-02T06:42:26Z'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"properties": {"resource": {"id": "cli000002", "restoreParameters": {"restoreSource":
+      "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/locations/westus/restorableDatabaseAccounts/9872bc75-d0ea-4ac0-9c97-d4048f081534",
+      "restoreTimestampInUtc": "2022-08-02T06:36:54.69518Z"}, "createMode": "Restore"},
+      "options": {}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '351'
+      Content-Type:
+      - application/json
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: PUT
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Enqueued"}'
+    headers:
+      azure-asyncoperation:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:42:29 GMT
+      location:
+      - https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_cosmosdb_mongodb_collection000001/providers/Microsoft.DocumentDB/databaseAccounts/cli000003/mongodbDatabases/cli000004/collections/cli000002/operationResults/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1196'
+      x-msedge-ref:
+      - 'Ref A: 36AB95E632264037A6BC139707106272 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:42:28Z'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:42:59 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: B4DF41A9E63246A4BD58A05FF7E21A70 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:42:59Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:43:29 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 7992580632964CA49C5B3250B1A00C29 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:43:30Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:43:59 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 97AE5280856D445CA34DC0D486DB1B9D Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:44:00Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:44:29 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 099945A7E9194F9FB05F7D7FE9E29891 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:44:30Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:45:00 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 6AF725F4886B40D5A192019FE4E8E1CA Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:45:00Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:45:30 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 33B6AEC1E1984C1793CA3A11887621B1 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:45:30Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:46:00 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: B441699564D348A0BC6E04B940B4A10D Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:46:00Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:46:30 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 23B3A04859E249FD90F70383505B4748 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:46:30Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Dequeued"}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '21'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:47:00 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: 89EDDD7A94DC4EF28A5217F9981302E0 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:47:01Z'
+    status:
+      code: 200
+      message: Ok
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - cosmosdb mongodb collection restore
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -a -d -n --restore-timestamp
+      User-Agent:
+      - AZURECLI/2.38.0 azsdk-python-mgmt-cosmosdb/0.7.0 Python/3.10.5 (Windows-10-10.0.22000-SP0)
+    method: GET
+    uri: https://api-dogfood.resources.windows-int.net/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DocumentDB/operationsStatus/3491e644-ccfb-404f-87e2-abf416a60df3?api-version=2022-08-15-preview
+  response:
+    body:
+      string: '{"status":"Failed","error":{"code":"InternalServerError","message":"One
+        or more child operations failed."}}'
+    headers:
+      cache-control:
+      - no-store, no-cache
+      content-length:
+      - '107'
+      content-type:
+      - application/json
+      date:
+      - Tue, 02 Aug 2022 06:47:31 GMT
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-gatewayversion:
+      - version=2.14.0
+      x-msedge-ref:
+      - 'Ref A: CB4121F60DCC4DEAACE515E15CDE7327 Ref B: WSTEDGE0718 Ref C: 2022-08-02T06:47:31Z'
+    status:
+      code: 200
+      message: Ok
+version: 1
