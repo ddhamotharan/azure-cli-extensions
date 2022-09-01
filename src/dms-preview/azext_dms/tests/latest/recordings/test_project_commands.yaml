@@ -93,14 +93,14 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"provisioningState":"Accepted","virtualSubnetId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/ERNetwork/providers/Microsoft.Network/virtualNetworks/AzureDMS-CORP-USC-VNET-5044/subnets/Subnet-1"},"etag":"wb5jvLO+/sVq8OLcc7M5nWDuJCnPOsj3pH6QtYEn1Tw=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003","kind":"Cloud","location":"centralus","name":"dmsextclitest000003","sku":{"name":"Premium_4vCores","size":"4
         vCores","tier":"Premium"},"tags":{"area":"cli","env":"test"},"type":"Microsoft.DataMigration/services"}'
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
       cache-control:
       - no-cache
       content-length:
@@ -142,7 +142,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -188,7 +188,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -234,7 +234,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -280,7 +280,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -326,7 +326,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -372,7 +372,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -418,7 +418,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -464,7 +464,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -510,7 +510,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -556,7 +556,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -602,7 +602,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -648,7 +648,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -694,7 +694,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -740,7 +740,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -786,7 +786,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -832,7 +832,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -878,7 +878,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Running"}'
@@ -924,7 +924,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"ec43e1d7-d09d-4e70-8606-4eca10e3ae04","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/ec43e1d7-d09d-4e70-8606-4eca10e3ae04","status":"Succeeded"}'
@@ -970,7 +970,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"provisioningState":"Succeeded","virtualNicId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.Network/networkInterfaces/NIC-gdyib5u8qch2qqhanqxyj6si","virtualSubnetId":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/ERNetwork/providers/Microsoft.Network/virtualNetworks/AzureDMS-CORP-USC-VNET-5044/subnets/Subnet-1"},"etag":"8N519BM4fVWAYtr1J42wout9XeLZBqDlTfg9HFrKy0s=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003","kind":"Cloud","location":"centralus","name":"dmsextclitest000003","sku":{"name":"Premium_4vCores","size":"4
@@ -1019,7 +1019,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004?api-version=2018-08-15-preview
   response:
     body:
       string: '{"error":{"code":"ResourceNotFound","message":"The Resource ''Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004''
@@ -1068,7 +1068,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"SQL","targetPlatform":"SQLDB","creationTime":"2021-08-17T23:52:48.7672691+00:00","provisioningState":"Succeeded"},"etag":"3nErQOiqphOmZloxtQ+YHws/jGmFVHmz7l4U1nVWF6c=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004","location":"centralus","name":"project1000004","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}'
@@ -1114,7 +1114,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"SQL","targetPlatform":"SQLDB","creationTime":"2021-08-17T23:52:48.7672691+00:00","provisioningState":"Succeeded"},"etag":"3nErQOiqphOmZloxtQ+YHws/jGmFVHmz7l4U1nVWF6c=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004","location":"centralus","name":"project1000004","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}'
@@ -1167,7 +1167,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"PostgreSQL","targetPlatform":"AzureDbForPostgreSQL","creationTime":"2021-08-17T23:52:57.7910688+00:00","provisioningState":"Succeeded"},"etag":"AZUb/8tSHpNuGnfH8fDoyUjnVHo3NafUn+8j8N/znNU=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006","location":"centralus","name":"projectpg000006","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}'
@@ -1213,7 +1213,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"PostgreSQL","targetPlatform":"AzureDbForPostgreSQL","creationTime":"2021-08-17T23:52:57.7910688+00:00","provisioningState":"Succeeded"},"etag":"AZUb/8tSHpNuGnfH8fDoyUjnVHo3NafUn+8j8N/znNU=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006","location":"centralus","name":"projectpg000006","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}'
@@ -1266,7 +1266,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"MongoDb","targetPlatform":"MongoDb","creationTime":"2021-08-17T23:53:06.8304099+00:00","provisioningState":"Succeeded"},"etag":"9OpapXBac6/+ey/ud1S7f8pLAj236nVHo3pqzUgLm70=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007","location":"centralus","name":"projectmg000007","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}'
@@ -1312,7 +1312,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"MongoDb","targetPlatform":"MongoDb","creationTime":"2021-08-17T23:53:06.8304099+00:00","provisioningState":"Succeeded"},"etag":"9OpapXBac6/+ey/ud1S7f8pLAj236nVHo3pqzUgLm70=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007","location":"centralus","name":"projectmg000007","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}'
@@ -1365,7 +1365,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: PUT
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project2000005?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project2000005?api-version=2018-08-15-preview
   response:
     body:
       string: '{"properties":{"sourcePlatform":"SQL","targetPlatform":"SQLDB","creationTime":"2021-08-17T23:53:16.107505+00:00","provisioningState":"Succeeded"},"etag":"dKON84z//4r7ZGaLg7dENR95BBYJ3tyQ/aq1oplGiX8=","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project2000005","location":"centralus","name":"project2000005","type":"Microsoft.DataMigration/services/projects"}'
@@ -1411,7 +1411,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects?api-version=2018-08-15-preview
   response:
     body:
       string: '{"value":[{"properties":{"sourcePlatform":"SQL","targetPlatform":"SQLDB","creationTime":"2021-08-17T23:52:48.7672691+00:00","provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project1000004","location":"centralus","name":"project1000004","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"},{"properties":{"sourcePlatform":"SQL","targetPlatform":"SQLDB","creationTime":"2021-08-17T23:53:16.107505+00:00","provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project2000005","location":"centralus","name":"project2000005","type":"Microsoft.DataMigration/services/projects"},{"properties":{"sourcePlatform":"MongoDb","targetPlatform":"MongoDb","creationTime":"2021-08-17T23:53:06.8304099+00:00","provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectmg000007","location":"centralus","name":"projectmg000007","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"},{"properties":{"sourcePlatform":"PostgreSQL","targetPlatform":"AzureDbForPostgreSQL","creationTime":"2021-08-17T23:52:57.7910688+00:00","provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/projectpg000006","location":"centralus","name":"projectpg000006","tags":{"Type":"test","Cli":""},"type":"Microsoft.DataMigration/services/projects"}]}'
@@ -1461,7 +1461,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: POST
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/checkNameAvailability?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/checkNameAvailability?api-version=2018-08-15-preview
   response:
     body:
       string: '{"reason":"AlreadyExists","message":"The resource name is already in
@@ -1510,7 +1510,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: DELETE
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project2000005?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/projects/project2000005?api-version=2018-08-15-preview
   response:
     body:
       string: ''
@@ -1556,7 +1556,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: POST
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/checkNameAvailability?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003/checkNameAvailability?api-version=2018-08-15-preview
   response:
     body:
       string: '{"nameAvailable":true}'
@@ -1604,13 +1604,13 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: DELETE
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003?api-version=2018-07-15-preview&deleteRunningTasks=true
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dmsext_cli_test_000001/providers/Microsoft.DataMigration/services/dmsextclitest000003?api-version=2018-08-15-preview&deleteRunningTasks=true
   response:
     body:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-07-15-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-08-15-preview
       cache-control:
       - no-cache
       content-length:
@@ -1620,7 +1620,7 @@ interactions:
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationResults/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-07-15-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationResults/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-08-15-preview
       pragma:
       - no-cache
       server:
@@ -1650,7 +1650,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"648af9de-f485-4c5e-a8ea-1555ad46c758","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758","status":"Running"}'
@@ -1696,7 +1696,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"648af9de-f485-4c5e-a8ea-1555ad46c758","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758","status":"Running"}'
@@ -1742,7 +1742,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"648af9de-f485-4c5e-a8ea-1555ad46c758","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758","status":"Running"}'
@@ -1788,7 +1788,7 @@ interactions:
       User-Agent:
       - AZURECLI/2.27.1 azsdk-python-mgmt-datamigration/9.0.0 Python/3.7.3 (Linux-5.10.43.3-microsoft-standard-WSL2-x86_64-with-debian-10.10)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-07-15-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758?api-version=2018-08-15-preview
   response:
     body:
       string: '{"name":"648af9de-f485-4c5e-a8ea-1555ad46c758","id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DataMigration/locations/centralus/operationStatuses/648af9de-f485-4c5e-a8ea-1555ad46c758","status":"Succeeded"}'

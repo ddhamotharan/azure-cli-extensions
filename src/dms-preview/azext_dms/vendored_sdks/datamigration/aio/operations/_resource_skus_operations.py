@@ -59,7 +59,7 @@ class ResourceSkusOperations:
             401: ClientAuthenticationError, 404: ResourceNotFoundError, 409: ResourceExistsError
         }
         error_map.update(kwargs.pop('error_map', {}))
-        api_version = "2018-07-15-preview"
+        api_version = "2018-08-15-preview"
         accept = "application/json"
 
         def prepare_request(next_link=None):

@@ -203,3 +203,15 @@ def load_command_table(self, _):
 
     with self.command_group('cosmosdb mongodb collection', cosmosdb_mongo_sdk, client_factory=cf_mongo_db_resources) as g:
         g.custom_command('merge', 'cli_begin_list_mongo_db_collection_partition_merge', is_preview=True)
+
+    with self.command_group('cosmosdb sql database', cosmosdb_sql_sdk, client_factory=cf_sql_resources) as g:
+        g.custom_command('restore', 'cli_cosmosdb_sql_database_restore', is_preview=True)
+
+    with self.command_group('cosmosdb sql container', cosmosdb_sql_sdk, client_factory=cf_sql_resources) as g:
+        g.custom_command('restore', 'cli_cosmosdb_sql_container_restore', is_preview=True)
+
+    with self.command_group('cosmosdb mongodb database', cosmosdb_mongo_sdk, client_factory=cf_mongo_db_resources) as g:
+        g.custom_command('restore', 'cli_cosmosdb_mongodb_database_restore', is_preview=True)
+
+    with self.command_group('cosmosdb mongodb collection', cosmosdb_mongo_sdk, client_factory=cf_mongo_db_resources) as g:
+        g.custom_command('restore', 'cli_cosmosdb_mongodb_collection_restore', is_preview=True)
